@@ -1,0 +1,25 @@
+.logo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+     /* background-color: #2f1d58; */
+    height: 100vh;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.logo svg {
+    width: 25;
+    height: 25px;
+    margin: 22px;
+
+}
+
+.logo span{
+    color: red
+}
+.icons-notification{
+    width: 30px;
+}

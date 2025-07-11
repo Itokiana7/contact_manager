@@ -1,0 +1,19 @@
+.wrap {
+display: grid;
+grid-template-columns: 1fr 2fr 1.5fr;
+grid-template-rows: 1fr;
+grid-column-gap: 8px;
+grid-row-gap: 0px;
+}
+
+.sidebar{
+    border: solid 1px black;
+}
+.content{
+    border: solid 1px black;
+}
+.about{
+    border: solid 1px black;
+    border-radius: 15px;
+}
+
