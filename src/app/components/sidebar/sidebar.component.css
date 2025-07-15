@@ -5,7 +5,7 @@
     align-items: flex-start;
     align-content: center;
      /* background-color: #2f1d58; */
-    height: 100vh;
+    /* height: 100vh; */
     flex-direction: row;
     margin-left: 20px;
 }
@@ -20,6 +20,17 @@
 .logo span{
     color: red
 }
+
 .icons-notification{
     width: 30px;
+}
+
+.untaged{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 20px 20px 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(111, 126, 148);
 }
