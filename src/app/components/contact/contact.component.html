@@ -1,0 +1,27 @@
+<!-- contact-list.component.html -->
+<div class=" text-white">
+  <div *ngFor="let letter of groupedContactKeys()" class="mb-6">
+    <h2 class="text-black text-xl font-bold mb-2">{{ letter }}</h2>
+    <div *ngFor="let contact of groupedContacts[letter]" class="bg-zinc-800 p-3 mb-2 rounded shadow-md cursor-pointer">
+      <div class="flex items-center justify-between gap-5">
+        <div>
+          <div class="font-semibold text-lg">{{ contact.name }}</div>
+          <div class="text-sm text-zinc-500">{{ contact.tags.join(', ') }}</div>
+        </div>
+        <div>
+          <div class="text-sm text-zinc-400">{{ contact.phone }}</div>
+          <div class="text-sm text-zinc-400">{{ contact.email }}</div>
+        </div>
+        <div class="cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+          </svg>
+        </div>
+
+      </div>
+      <!-- Optionnel : icône, bouton, etc -->
+    </div>
+  </div>
+</div>
